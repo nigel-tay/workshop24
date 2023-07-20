@@ -6,6 +6,14 @@
     <title>Form</title>
 </head>
 <body>
-    
+    <form action="/orderdetails" method="GET" th:object="${order}">
+        <input type="text" th:field="*{orderDate}">
+        <input type="text" th:field="*{customerName}">
+        <input type="text" th:field="*{shipAddress}">
+        <input type="text" th:field="*{notes}">
+        <input type="text" th:field="*{tax}">
+
+        <input type="submit" placeholder="Move to order details">
+    </form>
 </body>
 </html>
