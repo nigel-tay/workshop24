@@ -10,8 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Order {
-    private Integer id;
-    private Date date;
+    private Date orderDate;
     private String customerName;
     private String shipAddress;
     private String notes;
